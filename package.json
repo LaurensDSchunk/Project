@@ -4,6 +4,7 @@
   "description": "work in progress",
   "main": "server.js",
   "scripts": {
+    "start": "node server.js",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --dest build",
     "lint": "vue-cli-service lint"
