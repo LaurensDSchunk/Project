@@ -4,9 +4,21 @@
       <title>Hello world</title>
    </head>
    <script src = "/socket.io/socket.io.js"></script>
-   
    <script>
       const socket = io();
    </script>
-   <body>wjHello</body>
+   <body>
+      <div id="app">{{ message }}</div>
+      <script type="module">
+         import { createApp } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js'
+       
+         createApp({
+           data() {
+             return {
+               message: 'Hello Vue!'
+             }
+           }
+         }).mount('#app')
+       </script>
+   </body>
 </html>
