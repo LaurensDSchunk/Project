@@ -5,7 +5,7 @@ const io = require('socket.io')(http);
 const port = process.env.PORT || 3050;
 
 app.get('/', function(req, res) {
-   res.sendFile(__dirname + "/app/index.html");
+   res.sendFile(__dirname + "./app/index.html");
 });
 
 //Whenever someone connects this gets executed
